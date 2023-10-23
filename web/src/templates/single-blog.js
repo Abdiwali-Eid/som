@@ -1,7 +1,8 @@
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import Disqus from 'gatsby-plugin-disqus';
 import React from 'react';
-import { DiscussionEmbed } from 'disqus-react';
+// import { DiscussionEmbed } from 'disqus-react';
 import { format } from 'date-fns';
 import { BiCategory } from 'react-icons/bi';
 import { FiCalendar, FiUser } from 'react-icons/fi';
@@ -48,10 +49,13 @@ export const postQuery = graphql`
 
 function SingleBlog({ data }) {
   const blog = data.sanityBlog;
-  // const disqusConfig = {
-  //   shortname: process.env.GATSBY_DISQUS_NAME,
-  //   config: { identifier: blog.slug },
-  // };
+  const pageurl = typeof window !== 'undefined' ? window.location.href : '';
+  const disqusConfig = {
+    url: pageurl,
+    identifier: blog.slug,
+    title: blog.title,
+  };
+
   return (
     <SingleBlogStyles>
       <SEO title={blog.title} />
@@ -100,7 +104,7 @@ function SingleBlog({ data }) {
           <hr className="hr" />
           <div className="body">
             <MyPortableText value={blog._rawBody} />
-            {/* <DiscussionEmbed {...disqusConfig} /> */}
+            <Disqus config={disqusConfig} />
           </div>
         </div>
       </PageSpace>

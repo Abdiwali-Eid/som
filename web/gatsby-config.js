@@ -19,6 +19,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `maqaal`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-styled-components',
     },
     {
