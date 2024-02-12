@@ -45,7 +45,7 @@ export const HeroSectionStyles = styled.div`
       right: 0;
       top: 0;
       width: 60%;
-      height: 100%;
+      height: 30%;
       .hero__image {
         margin-top: 60px;
       }
@@ -70,7 +70,7 @@ export const HeroSectionStyles = styled.div`
         justify-content: center;
         width: 100%;
         .hero__image {
-          height: 300px;
+          height: 100px;
           margin: 0 auto;
         }
       }

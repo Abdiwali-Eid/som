@@ -7,7 +7,7 @@ export const FooterStyles = styled.footer`
   .footer__text {
     margin: 0 auto;
     margin-top: 1rem;
-    max-width: 400px;
+    max-width: 600px;
   }
   .footer__menuList {
     margin-top: 1rem;
