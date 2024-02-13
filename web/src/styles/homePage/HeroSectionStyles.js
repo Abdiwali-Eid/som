@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroSectionStyles = styled.div`
-  min-height: 80vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
