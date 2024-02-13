@@ -46,7 +46,7 @@ function Releted() {
 
   return (
     <FeaturedBlogsStyles>
-      <SectionTitle>Ralated posts</SectionTitle>
+      <SectionTitle>Related posts</SectionTitle>
       {/* <ParagraphText className="featuredBlogs__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nemo
         ad provident consectetur quis eaque doloribus et, ducimus earum iste est
