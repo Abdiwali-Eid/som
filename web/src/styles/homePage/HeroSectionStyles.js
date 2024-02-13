@@ -37,6 +37,7 @@ export const HeroSectionStyles = styled.div`
       .hero__text {
         width: 100%; /* Full width */
         margin: 0 auto;
+        margin-top: 1rem;
       }
       .hero__button {
         margin-top: 1.5rem;
