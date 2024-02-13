@@ -1,5 +1,4 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
 import ParagraphText from '../typography/ParagraphText';
@@ -19,16 +18,6 @@ function HeroSection() {
             <Button to="/blogs" tag={Link} className="hero__button">
               Explore Blogs
             </Button>
-          </div>
-          <div className="right">
-            <StaticImage
-              className="hero__image"
-              // src="https://virtualcomputing.nl/wp-content/uploads/2020/07/image.png"
-              src="../../images/hero (1).jpg"
-              alt="vr guy"
-              placeholder="blurred"
-              // objectPosition="50% 30%"
-            />
           </div>
         </div>
       </div>
